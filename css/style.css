@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 .clear{
     clear: both;
 }
@@ -85,26 +88,26 @@
 .container .nav .right__menu ul a:hover{
     color: red;
 }
-/* intro */
-.intro{
-    padding: 80px 0;
+/* services */
+.services{
+    padding: 80px 0 0;
     text-align: center;
 
 }
-.intro h1{
+.services h1{
     font-size: 50px;
 }
-.intro__content{
+.services__content{
     padding: 0 40px;    
 
 }
-.intro__content .intro__item{
+.services__content .services__item{
     padding: 20px;
     width: 25%;
     float: left;    
 
 }
-.intro__content .intro__item .intro__bg{
+.services__content .services__item .services__bg{
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -112,11 +115,11 @@
     border-radius: 0 0 20px 20px;
 
 }
-.intro__content .intro__item .intro__bg img{
+.services__content .services__item .services__bg img{
     width: 100%;
     display: block;
 }
-.intro__content .intro__item .intro__bg .text{
+.services__content .services__item .services__bg .text{
     border: 1px solid transparent;
     border-top: none;
     padding: 20px 20px 30px;
@@ -124,19 +127,19 @@
     transition: all .5s;
 }
 
-.intro__content .intro__item .intro__bg h3{
+.services__content .services__item .services__bg h3{
     font-size: 24px;
     margin-bottom: 10px;
 }
-.intro__content .intro__item .intro__bg p{
+.services__content .services__item .services__bg p{
     font-size: 18px;
     color: silver;
     font-weight: 100;
 }
-.intro__content .intro__item .intro__bg .pic{
+.services__content .services__item .services__bg .pic{
     position: relative;
 }
-.intro__content .intro__item .intro__bg .pic i{
+.services__content .services__item .services__bg .pic i{
     position: absolute;
     top: 8px;
     right: 8px;
@@ -151,7 +154,7 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.intro__content .intro__item .intro__bg .pic:hover::before{
+.services__content .services__item .services__bg .pic:hover::before{
     content: "";
     position: absolute;
     top: 0;
@@ -163,20 +166,20 @@
     background-color: rgba(128, 0, 0, 0.3);
     z-index: 4;
 }
-.intro__content .intro__item .intro__bg:hover h3{
+.services__content .services__item .services__bg:hover h3{
     color: red;
 }
-.intro__content .intro__item .intro__bg:hover .text{
+.services__content .services__item .services__bg:hover .text{
     border: 1px solid red;
     border-top: none;
     border-radius: 0 0 20px 20px;
 }
-/* video */
-.video{
+/* blogs */
+.blogs{
     text-align: center;
-    padding-bottom: 50px;
+    padding: 80px 0 0;
 }
-.video h1{
+.blogs h1{
     font-size: 50px;
 }
 
