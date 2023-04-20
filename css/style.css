@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+.header{
+    background-image: url('../img/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.header .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: 2;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+.container .nav{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.container .nav .left__logo{
+    float: left;
+}
+.container .nav .left__logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    line-height: 100px;
+    font-weight: bold;
+
+}
+.container .nav .right__menu{
+    float: right;
+}
+.container .nav .right__menu ul{
+    list-style: none;
+}.container .nav .right__menu ul li{
+    display: inline;
+}
+.container .nav .right__menu ul a{
+    text-decoration: none;
+    color: white;
+    line-height: 100px;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all .3s;
+
+}
+.container .nav .right__menu ul a::after{
+    content: "";
+    background-color: red;
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+}
+.container .nav .right__menu ul a:hover::after{
+    width: 100%;
+}
+.container .nav .right__menu ul a:hover{
+    color: red;
+}
+/* intro */
+.intro{
+    padding: 80px 0;
+    text-align: center;
+
+}
+.intro h1{
+    font-size: 50px;
+}
+.intro__content{
+    padding: 0 40px;    
+
+}
+.intro__content .intro__item{
+    padding: 20px;
+    width: 25%;
+    float: left;    
+
+}
+.intro__content .intro__item .intro__bg{
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px;
+
+}
+.intro__content .intro__item .intro__bg img{
+    width: 100%;
+    display: block;
+}
+.intro__content .intro__item .intro__bg .text{
+    border: 1px solid transparent;
+    border-top: none;
+    padding: 20px 20px 30px;
+    border-radius: 0 0 20px 20px;
+    transition: all .5s;
+}
+
+.intro__content .intro__item .intro__bg h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.intro__content .intro__item .intro__bg p{
+    font-size: 18px;
+    color: silver;
+    font-weight: 100;
+}
+.intro__content .intro__item .intro__bg .pic{
+    position: relative;
+}
+.intro__content .intro__item .intro__bg .pic i{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 5;
+    width: 38px;
+    height: 38px;
+    line-height: 40px;
+    border-radius: 30%;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.intro__content .intro__item .intro__bg .pic:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 0, 0.3);
+    z-index: 4;
+}
+.intro__content .intro__item .intro__bg:hover h3{
+    color: red;
+}
+.intro__content .intro__item .intro__bg:hover .text{
+    border: 1px solid red;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+}
+/* video */
+.video{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.video h1{
+    font-size: 50px;
+}
+
+
+
+
+
+
+
